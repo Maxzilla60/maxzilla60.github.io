@@ -1,6 +1,9 @@
 * {
 	padding: 0;
 	margin: 0;
+	-webkit-transition-duration: 0.6s;
+	-o-transition-duration: 0.6s;
+	transition-duration: 0.6s;
 }
 
 .banana {color: #ffe125;}
@@ -32,6 +35,9 @@ header h2 {
 }
 
 body {
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffe135), to(#FFE056));
+	background: -webkit-linear-gradient(top, #ffe135 0%, #FFE056 100%);
+	background: -o-linear-gradient(top, #ffe135 0%, #FFE056 100%);
 	background: linear-gradient(to bottom, #ffe135 0%, #FFE056 100%);
 	background-attachment: fixed;
 }
@@ -48,15 +54,25 @@ main {
 	font-family: 'Lato', sans-serif;
 	border-radius: 10px;
 	margin-bottom: 100px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 .even {
-	transform: rotate(1deg);
+	-webkit-transform: rotate(1deg);
+	    -ms-transform: rotate(1deg);
+	        transform: rotate(1deg);
 }
 .odd {
-	transform: rotate(-1deg);
+	-webkit-transform: rotate(-1deg);
+	    -ms-transform: rotate(-1deg);
+	        transform: rotate(-1deg);
 }
 .activity_icon {
 	background-color: #7b3f00;
