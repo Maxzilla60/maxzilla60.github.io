@@ -1,0 +1,93 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.banana {color: #ffe125;}
+.complement {color: #331832;}
+.chocolate {color: #7b3f00;}
+.milk {color: #f3e5ab;}
+.licorice {	color: #1b1811;}
+
+header {
+	padding-top: 40px;
+	background-color: #7b3f00;
+	text-align: center;
+}
+header h1 {
+	font-family: 'Oleo Script', cursive;
+	font-size: 80px;
+	text-shadow: 0px 2px 0px #DDD19C, 0px -5px 0px #653400;
+}
+header h2 {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	word-spacing: 100px;
+}
+.chocodrip {
+	height: 90px;
+	background: url("../assets/choconana.svg");
+	background-repeat: repeat-x;
+	background-position: center;
+	border: 0px;
+}
+
+body {
+	background: linear-gradient(to bottom, #ffe135 0%, #FFE056 100%);
+	background-attachment: fixed;
+}
+
+main {
+	margin-top: 40px;
+}
+
+.activity {
+	padding: 10px;
+	width: 800px;
+	min-height: 100px;
+	margin: auto;
+	font-family: 'Lato', sans-serif;
+	border-radius: 10px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.even {
+	transform: rotate(1deg);
+}
+.odd {
+	transform: rotate(-1deg);
+}
+.activity_icon {
+	background-color: #7b3f00;
+	height: inherit;
+	width: 200px;
+	margin-right: 20px;
+}
+.activity_icon img {
+	width: 100%;
+}
+.activity_text {
+	width: 100%;
+}
+.activity_title {
+	font-family: 'Oleo Script', cursive;
+	font-size: 30px;
+	text-shadow: 0px 3px 0px #D1B92C;
+}
+.activity_title a {
+	color: #7b3f00;
+	text-decoration: none;
+}
+.activity_title a:hover {
+	color: #D33BB7;
+}
+.activity_date {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.activity_description {
+	font-size: 20px;
+	line-height: 1.2;
+}

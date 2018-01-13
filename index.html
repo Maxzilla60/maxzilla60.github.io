@@ -1,0 +1,34 @@
+---
+layout: main
+---
+{% include header.html %}
+
+<main>
+  	{% for activity in site.activities %}
+  		<div class="activity chocolate {% cycle 'odd','even' %}">
+  			<div class="activity_icon">icon</div>
+  			<div class="activity_text">
+	  			<div class="activity_title">
+	  				{% if activity.link != "" %}
+	  					<a href="{{ activity.link }}" target="_blank">
+	  						{{ activity.name }}
+	  					</a>
+	  				{% else %}
+	  					{{ activity.name }}
+	  				{% endif %}
+	  			</div>
+	  			<div class="activity_date licorice">
+	  				{{ activity.date | date_to_long_string }}
+	  			</div>
+	  			<div class="activity_description licorice">
+	  				{{ activity.content }}
+	  			</div>
+	  		</div>
+  		</div>
+  	{% endfor %}
+	</main>
+
+	<footer>
+</footer>
+
+<!--<script src="js/scripts.js"></script>-->
