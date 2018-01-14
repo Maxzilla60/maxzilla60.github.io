@@ -5,8 +5,13 @@ layout: main
 
 <main>
   	{% for activity in site.activities %}
-  		<div class="activity chocolate {% cycle 'odd','even' %}">
-  			<div class="activity_icon">icon</div>
+  		{% capture var %}{% cycle 'odd', 'even' %}{% endcapture %}
+  		<div class="activity chocolate {{ var }}">
+  			{% if var  == 'odd' %}
+  				<div class="activity_icon">
+  					<img src="assets/logos_aclister.svg">
+  				</div>
+  			{% endif %}
   			<div class="activity_text">
 	  			<div class="activity_title">
 	  				{% if activity.link != "" %}
@@ -18,12 +23,17 @@ layout: main
 	  				{% endif %}
 	  			</div>
 	  			<div class="activity_date licorice">
-	  				{{ activity.date | date_to_long_string }}
+	  				{{ activity.date | date_to_long_string }} - {{ var }}
 	  			</div>
 	  			<div class="activity_description licorice">
 	  				{{ activity.content }}
 	  			</div>
 	  		</div>
+	  		{% if var  == 'even' %}
+  				<div class="activity_icon">
+					<img src="assets/logos_aclister.svg">
+  				</div>
+  			{% endif %}
   		</div>
   	{% endfor %}
 	</main>

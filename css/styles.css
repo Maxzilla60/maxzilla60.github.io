@@ -28,7 +28,7 @@ header h2 {
 }
 .chocodrip {
 	height: 90px;
-	background: url("../assets/choconana.svg");
+	background: url("../assets/drip.svg");
 	background-repeat: repeat-x;
 	background-position: center;
 	border: 0px;
@@ -64,21 +64,38 @@ main {
 	-ms-flex-align: center;
 	align-items: center;
 }
-.even {
-	-webkit-transform: rotate(1deg);
-	    -ms-transform: rotate(1deg);
-	        transform: rotate(1deg);
-}
 .odd {
 	-webkit-transform: rotate(-1deg);
 	    -ms-transform: rotate(-1deg);
 	        transform: rotate(-1deg);
 }
+.even {
+	-webkit-transform: rotate(1deg);
+	    -ms-transform: rotate(1deg);
+	        transform: rotate(1deg);
+}
+.odd .activity_icon {
+	margin-right: 20px;
+}
+.even .activity_icon {
+	margin-left: 20px;
+}
+.even .activity_text {
+	text-align: right;
+}
+.odd .activity_icon:hover {
+	-webkit-transform: rotate(7deg) scale(1.1);
+    	-ms-transform: rotate(7deg) scale(1.1);
+        	transform: rotate(7deg) scale(1.1);
+}
+.even .activity_icon:hover {
+	-webkit-transform: rotate(-7deg) scale(1.1);
+    	-ms-transform: rotate(-7deg) scale(1.1);
+        	transform: rotate(-7deg) scale(1.1);
+}
 .activity_icon {
-	background-color: #7b3f00;
 	height: inherit;
 	width: 200px;
-	margin-right: 20px;
 }
 .activity_icon img {
 	width: 100%;
