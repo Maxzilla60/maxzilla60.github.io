@@ -71,6 +71,16 @@ main {
 	-ms-flex-align: center;
 	align-items: center;
 }
+.odd.activity:hover > .activity_icon {
+	-webkit-transform: rotate(7deg) scale(1.1);
+    	-ms-transform: rotate(7deg) scale(1.1);
+        	transform: rotate(7deg) scale(1.1);
+}
+.even.activity:hover > .activity_icon {
+	-webkit-transform: rotate(-7deg) scale(1.1);
+    	-ms-transform: rotate(-7deg) scale(1.1);
+        	transform: rotate(-7deg) scale(1.1);
+}
 .odd {
 	-webkit-transform: rotate(-1deg);
 	    -ms-transform: rotate(-1deg);
@@ -81,6 +91,16 @@ main {
 	    -ms-transform: rotate(1deg);
 	        transform: rotate(1deg);
 }
+/*.odd:hover {
+	-webkit-transform: rotate(1deg);
+	    -ms-transform: rotate(1deg);
+	        transform: rotate(1deg);
+}
+.even:hover {
+	-webkit-transform: rotate(-1deg);
+	    -ms-transform: rotate(-1deg);
+	        transform: rotate(-1deg);
+}*/
 .odd .activity_icon {
 	margin-right: 20px;
 }
@@ -89,16 +109,6 @@ main {
 }
 .even .activity_text {
 	text-align: right;
-}
-.odd .activity_icon:hover {
-	-webkit-transform: rotate(7deg) scale(1.1);
-    	-ms-transform: rotate(7deg) scale(1.1);
-        	transform: rotate(7deg) scale(1.1);
-}
-.even .activity_icon:hover {
-	-webkit-transform: rotate(-7deg) scale(1.1);
-    	-ms-transform: rotate(-7deg) scale(1.1);
-        	transform: rotate(-7deg) scale(1.1);
 }
 .activity_icon {
 	height: inherit;
