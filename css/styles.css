@@ -5,6 +5,12 @@
 	-o-transition-duration: 0.6s;
 	transition-duration: 0.6s;
 }
+a {
+	color: #7b3f00;
+}
+a:hover {
+	color: #D33BB7;
+}
 
 .banana {color: #ffe125;}
 .complement {color: #331832;}
@@ -109,11 +115,7 @@ main {
 	text-shadow: 0px 3px 0px #D1B92C;
 }
 .activity_title a {
-	color: #7b3f00;
 	text-decoration: none;
-}
-.activity_title a:hover {
-	color: #D33BB7;
 }
 .activity_date {
 	margin-top: 5px;
