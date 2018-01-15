@@ -46,6 +46,7 @@ body {
 	background: -o-linear-gradient(top, #ffe135 0%, #FFE056 100%);
 	background: linear-gradient(to bottom, #ffe135 0%, #FFE056 100%);
 	background-attachment: fixed;
+	font-family: 'Lato', sans-serif;
 }
 
 main {

@@ -1,0 +1,10 @@
+ul {
+	width: -moz-fit-content;
+	margin: auto;
+	margin-top: 50px;
+	font-size: 30px;
+	line-height: 40px;
+}
+ol, ul, li {
+	list-style: disc inside;
+}
