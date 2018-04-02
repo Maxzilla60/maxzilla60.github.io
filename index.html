@@ -14,10 +14,10 @@ layout: main
 	  			<div class="activity_title">
 	  				{% if activity.link != "" %}
 	  					<a href="{{ activity.link }}" target="_blank">
-	  						{{ activity.name }}
+	  						{{ activity.title }}
 	  					</a>
 	  				{% else %}
-	  					{{ activity.name }}
+	  					{{ activity.title }}
 	  				{% endif %}
 	  			</div>
 	  			<div class="activity_date licorice">
@@ -34,9 +34,8 @@ layout: main
   			{% endif %}
   		</div>
   	{% endfor %}
-	</main>
+</main>
 
-	<footer>
-</footer>
+<footer></footer>
 
 <!--<script src="js/scripts.js"></script>-->
