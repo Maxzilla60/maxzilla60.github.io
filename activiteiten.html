@@ -1,0 +1,42 @@
+---
+layout: main
+permalink: /activiteiten/index.html
+---
+<main>
+  	{% for activity in site.activities %}
+  		{% capture var %}{% cycle 'odd', 'even' %}{% endcapture %}
+  		<div class="activity chocolate {{ var }}">
+  			{% if var  == 'odd' %}
+  				<div class="activity_icon">
+  					<img src="/assets/logos_aclister.svg">
+  				</div>
+  			{% endif %}
+  			<div class="activity_text">
+	  			<div class="activity_title">
+	  				{% if activity.link != "" %}
+	  					<a href="{{ activity.link }}" target="_blank">
+	  						{{ activity.title }}
+	  					</a>
+	  				{% else %}
+	  					{{ activity.title }}
+	  				{% endif %}
+	  			</div>
+	  			<div class="activity_date licorice">
+	  				{{ activity.date | date_to_long_string }}
+	  			</div>
+	  			<div class="activity_description licorice">
+	  				{{ activity.short }}
+	  			</div>
+	  		</div>
+	  		{% if var  == 'even' %}
+  				<div class="activity_icon">
+					<img src="/assets/logos_aclister.svg">
+  				</div>
+  			{% endif %}
+  		</div>
+  	{% endfor %}
+</main>
+
+<footer></footer>
+
+<!--<script src="js/scripts.js"></script>-->
