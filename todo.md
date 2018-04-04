@@ -1,9 +1,10 @@
 ---
 layout: main
 ---
+* Better descriptions
+* Navigation
+* Chocolate Squares
 * Favicon
 * Font Awesome Credit
-* Chocolate Squares
-* Better descriptions
-* Footer?
 * Use SASS
+* Footer?
