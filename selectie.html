@@ -1,12 +1,11 @@
 ---
 layout: main
-permalink: /selectie/index.html
 ---
 <main>
   	{% for activity in site.activities %}
   		{% if activity.selection %}
 	  		{% capture var %}{% cycle 'odd', 'even' %}{% endcapture %}
-	  		<div class="activity chocolate {{ var }}">
+	  		<a href="{{ activity.url }}" class="activity chocolate {{ var }}">
 	  			{% if var  == 'odd' %}
 	  				<div class="activity_icon">
 	  					<img src="/assets/logos_aclister.svg">
@@ -14,13 +13,7 @@ permalink: /selectie/index.html
 	  			{% endif %}
 	  			<div class="activity_text">
 		  			<div class="activity_title">
-		  				{% if activity.link != "" %}
-		  					<a href="{{ activity.link }}" target="_blank">
-		  						{{ activity.title }}
-		  					</a>
-		  				{% else %}
-		  					{{ activity.title }}
-		  				{% endif %}
+	  						{{ activity.title }}
 		  			</div>
 		  			<div class="activity_date licorice">
 		  				{{ activity.date | date_to_long_string }}
@@ -34,7 +27,7 @@ permalink: /selectie/index.html
 						<img src="/assets/logos_aclister.svg">
 	  				</div>
 	  			{% endif %}
-	  		</div>
+	  		</a>
 	  	{% endif %}
   	{% endfor %}
 </main>

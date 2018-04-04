@@ -1,9 +1,9 @@
 * {
 	padding: 0;
 	margin: 0;
-	-webkit-transition-duration: 0.6s;
-	-o-transition-duration: 0.6s;
-	transition-duration: 0.6s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
 }
 a {
 	color: #7b3f00;
@@ -82,18 +82,30 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+.description {
+	background-color: #f3e5ab;
+	border-radius: 10px;
+	box-shadow: 0px 2px 0px #DDD19C;
+	font-size: 18px;
+	margin: auto;
+	margin-bottom: 40px;
+	padding: 30px;
+	text-align: center;
+	width: 80%;
+}
+
 main {
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
 .activity {
 	padding: 10px;
-	width: 800px;
+	width: 80%;
 	min-height: 100px;
 	margin: auto;
 	font-family: 'Lato', sans-serif;
 	border-radius: 10px;
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -103,6 +115,13 @@ main {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+}
+a.activity {
+	text-decoration: none;
+}
+.activity_border {
+	border-left: 6px solid #7b3f00;
+	padding-left: 20px;
 }
 .odd.activity:hover > .activity_icon {
 	-webkit-transform: rotate(7deg) scale(1.1);
@@ -161,6 +180,9 @@ main {
 .activity_title a {
 	text-decoration: none;
 }
+.activity_title a:hover > .fa-link {
+	color: #D33BB7;
+}
 .activity_date {
 	margin-top: 5px;
 	margin-bottom: 10px;
@@ -168,4 +190,9 @@ main {
 .activity_description {
 	font-size: 20px;
 	line-height: 1.2;
+}
+
+.fa-link {
+	margin-left: 5px;
+	font-size: 20px;
 }

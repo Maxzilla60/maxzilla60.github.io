@@ -3,38 +3,34 @@ layout: main
 permalink: /activiteiten/index.html
 ---
 <main>
-  	{% for activity in site.activities %}
-  		{% capture var %}{% cycle 'odd', 'even' %}{% endcapture %}
-  		<div class="activity chocolate {{ var }}">
-  			{% if var  == 'odd' %}
-  				<div class="activity_icon">
-  					<img src="/assets/logos_aclister.svg">
-  				</div>
-  			{% endif %}
-  			<div class="activity_text">
-	  			<div class="activity_title">
-	  				{% if activity.link != "" %}
-	  					<a href="{{ activity.link }}" target="_blank">
-	  						{{ activity.title }}
-	  					</a>
-	  				{% else %}
-	  					{{ activity.title }}
-	  				{% endif %}
-	  			</div>
-	  			<div class="activity_date licorice">
-	  				{{ activity.period }} | {{ activity.location }} | {{ activity.category }}
-	  			</div>
-	  			<div class="activity_description licorice">
-	  				{{ activity.short }}
-	  			</div>
+	<div class="description">
+		Hieronder een kort overzicht van <u>alle</u> activiteiten waaraan ik heb meegedaan. Een aantal van deze zijn wat dieper besproken op de <a href="/selectie/">selectie pagina</a>.
+	</div>
+	<div class="activity_list">
+	  	{% for activity in site.activities %}
+	  		<div class="activity activity_border chocolate">
+	  			<div class="activity_text">
+		  			<div class="activity_title">
+		  				{% if activity.link != "" %}
+		  					<a href="{{ activity.link }}" target="_blank">
+		  						{{ activity.title }} <i class="fas fa-link"></i>
+		  					</a>
+		  				{% else %}
+		  					{{ activity.title }}
+		  				{% endif %}
+		  			</div>
+		  			<div class="activity_date licorice">
+		  				duur : {{ activity.period }}</br>
+		  				locatie : {{ activity.location }}</br>
+		  				categorie : {{ activity.category }}
+		  			</div>
+		  			<div class="activity_description licorice">
+		  				{{ activity.short }}
+		  			</div>
+		  		</div>
 	  		</div>
-	  		{% if var  == 'even' %}
-  				<div class="activity_icon">
-					<img src="/assets/logos_aclister.svg">
-  				</div>
-  			{% endif %}
-  		</div>
-  	{% endfor %}
+	  	{% endfor %}
+  	</div>
 </main>
 
 <footer></footer>
