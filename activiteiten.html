@@ -22,7 +22,7 @@ permalink: /activiteiten/index.html
 	  				{% endif %}
 	  			</div>
 	  			<div class="activity_date licorice">
-	  				{{ activity.date | date_to_long_string }}
+	  				{{ activity.period }} | {{ activity.location }} | {{ activity.category }}
 	  			</div>
 	  			<div class="activity_description licorice">
 	  				{{ activity.short }}
