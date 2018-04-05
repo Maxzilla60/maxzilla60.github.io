@@ -251,3 +251,10 @@ article button .fa-file-alt {
 article button.small_button .fa-file-alt {
 	font-size: 23px;
 }
+
+/* Small Screen */
+@media all and (min-width: 1200px) {
+	main {
+		width: 1100px;
+	}
+}
