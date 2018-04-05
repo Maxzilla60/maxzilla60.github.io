@@ -201,6 +201,11 @@ article h2 {
 	text-align: center;
 	text-decoration: underline;
 }
+article h3 {
+	font-size: 23px;
+	text-align: center;
+	text-decoration: underline;
+}
 article p {
 	line-height: 1.3;
 	text-align: justify;
@@ -221,12 +226,17 @@ article button {
 	padding: 10px;
 	text-align: center;
 }
+article button.small_button {
+	font-size: 23px;
+}
 article a {
 	text-decoration-line: none;
-	width: 100%;
 }
 article button .fa-file-alt {
 	font-size: 30px;
 	margin-bottom: 0;
 	margin-left: 10px;
+}
+article button.small_button .fa-file-alt {
+	font-size: 23px;
 }
