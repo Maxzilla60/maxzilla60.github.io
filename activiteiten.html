@@ -6,31 +6,31 @@ permalink: /activiteiten/index.html
 	Hieronder een kort overzicht van <u>alle</u> activiteiten waaraan ik heb meegedaan.</br>Een aantal van deze zijn wat dieper besproken op de <a href="/selectie/">selectie pagina</a>.
 </div>
 <div class="activity_list">
-  	{% for activity in site.activities %}
-  		<div class="activity activity_border chocolate">
-  			<div class="activity_text">
-	  			<div class="activity_title">
-	  				{{ activity.title }}
-	  			</div>
-	  			<div class="activity_date licorice">
-	  				duur : {{ activity.period }}</br>
-	  				{% if activity.location != "" %}
-	  					locatie : 
-	  					<a href="https://maps.google.com/?q={{ activity.location | uri_escape }}" target="_blank">
-	  					{{ activity.location }}</a>
-	  				</br>
-	  				{% endif %}
-	  				{% if activity.link != "" %}
-	  					website : <a href="{{ activity.link }}" target="_blank">
-	  						{{ activity.link }}
-	  					</a></br>
-	  				{% endif %}
-	  				categorie : {{ activity.category }}
-	  			</div>
-	  			<div class="activity_description licorice">
-	  				{{ activity.short }}
-	  			</div>
-	  		</div>
-  		</div>
-  	{% endfor %}
-	</div>
+	{% for activity in site.activities %}
+		<div class="activity activity_border chocolate">
+			<div class="activity_text">
+				<div class="activity_title">
+					{{ activity.title }}
+				</div>
+				<div class="activity_date licorice">
+					duur : {{ activity.period }}</br>
+					{% if activity.location != "" %}
+						locatie : 
+						<a href="https://maps.google.com/?q={{ activity.location | uri_escape }}" target="_blank">
+						{{ activity.location }}</a>
+					</br>
+					{% endif %}
+					{% if activity.link != "" %}
+						website : <a href="{{ activity.link }}" target="_blank">
+							{{ activity.link }}
+						</a></br>
+					{% endif %}
+					categorie : {{ activity.category }}
+				</div>
+				<div class="activity_description licorice">
+					{{ activity.short }}
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div>
