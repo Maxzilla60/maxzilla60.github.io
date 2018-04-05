@@ -1,6 +1,12 @@
 ---
 layout: main
+permalink: /selectie/
 ---
+<div class="description">
+	Hieronder is een selectie activiteiten wat ik wat dieper wil bespreken.</br>
+	Een kort overzicht van <u>alle</u> activiteiten waaraan ik heb meegedaan zie je op de <a href="/activiteiten/">overzicht pagina</a>.
+</div>
+<div class="activity_list">
 {% for activity in site.activities %}
 {% if activity.selection %}
 			{% capture var %}{% cycle 'odd', 'even' %}{% endcapture %}
@@ -18,7 +24,7 @@ layout: main
 					{{ activity.date | date_to_long_string }}
 				</div>
 				<div class="activity_description licorice">
-					{{ activity.short }}
+					{{ activity.short | strip_html }}
 				</div>
 			</div>
 			{% if var == 'even' %}
@@ -29,3 +35,4 @@ layout: main
 		</a>
 	{% endif %}
 {% endfor %}
+</div>
