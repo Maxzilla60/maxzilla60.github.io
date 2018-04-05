@@ -1,6 +1,9 @@
 <nav>
-	<a href="/"><button>Intro</button></a>
-	<a href="/selectie"><button>Selectie</button></a>
-	<a href="/activiteiten"><button>Overzicht</button></a>
-	<a href="/reflectie"><button>Reflectie</button></a>
+	{% for nav in site.data.navigation.pages %}
+		{% if nav.url == page.url %}
+			<button class="active">{{ nav.title }}</button>
+		{% else %}
+			<a href="{{ nav.url }}"><button>{{ nav.title }}</button></a>
+		{% endif %}
+	{% endfor %}
 </nav>

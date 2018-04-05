@@ -1,0 +1,9 @@
+pages:
+  - title: Intro
+    url: /
+  - title: Selectie
+    url: /selectie/
+  - title: Overzicht
+    url: /activiteiten/
+  - title: Reflectie
+    url: /reflectie/
