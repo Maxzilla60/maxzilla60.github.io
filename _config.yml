@@ -32,6 +32,10 @@ collections:
 # Build settings
 markdown: kramdown
 
+# Sass partials directory (for @imports)
+sass:
+  style: :compressed # Default :expanded
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
