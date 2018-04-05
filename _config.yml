@@ -28,7 +28,6 @@ github_username:  Maxzilla60
 collections:
   activities:
     output: true
-    permalink: /activiteiten/:name
 
 # Build settings
 markdown: kramdown
