@@ -1,12 +1,12 @@
 ---
 layout: main
-title: ToDo List for Portfolio
+title: To-Do List for Portfolio
 ---
 * Intro
 * Study Buddy
-* 2 Selections
+* Open Bedrijven Dag
+* CoderDojo
 * Reflection
-* Accessibility
 * Selectie metadata (also number of words?)
 * Chocolate Squares
 * Favicon

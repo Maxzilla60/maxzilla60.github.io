@@ -18,7 +18,7 @@ author: Maxime Orione
 email: maxpower98@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hallo, ik ben Maxime Orione - noem me maar Max - en dit is mijn I-Talent Portfolio!
-  Ik ben student Application Development op de Hogeschool PXL te Hasselt. Mijn programmeurshart ligt vooral bij webdevelopment, zowel front- als back-end, maar ik hou me ook veel bezig met tekenen en design. Verder heb ik ook interesse om leerkracht te worden.
+  Ik ben student Application Development op de Hogeschool PXL te Hasselt. Mijn programmeurshart ligt vooral bij webdevelopment, zowel front- als back-end, maar ik hou me ook veel bezig met tekenen en design.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: HungryMaxzilla
