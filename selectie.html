@@ -14,7 +14,7 @@ permalink: /selectie/
 			<a href="{{ activity.url }}" class="activity chocolate {{ var }}">
 			{% if var == 'odd' %}
 				<div class="activity_icon">
-					<img src="/assets/logos_aclister.svg">
+					<img src="/assets/{{ activity.icon }}" />
 				</div>
 			{% endif %}
 			<div class="activity_text">
@@ -30,7 +30,7 @@ permalink: /selectie/
 			</div>
 			{% if var == 'even' %}
 				<div class="activity_icon">
-					<img src="/assets/{{ activity.icon }}">
+					<img src="/assets/{{ activity.icon }}" />
 				</div>
 			{% endif %}
 		</a>
