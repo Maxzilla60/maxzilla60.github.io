@@ -7,10 +7,10 @@ title: To-Do List for Portfolio
 * Open Bedrijven Dag
 * CoderDojo
 * Reflection
-* Selectie metadata (also number of words?)
 * Chocolate Squares
 * Favicon
 * Font Awesome Credit
 * Footer?
 * Good morning/Good evening?
 * I AM ERROR
+* Number of Words?
