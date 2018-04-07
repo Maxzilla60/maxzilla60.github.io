@@ -2,7 +2,7 @@
 layout: main
 title: To-Do List for Portfolio
 ---
-* Intro
+* Intro (Photo)
 * Study Buddy
 * Open Bedrijven Dag
 * CoderDojo
