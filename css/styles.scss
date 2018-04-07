@@ -149,21 +149,17 @@ a.activity {
 		-ms-transform: rotate(-7deg) scale(1.1);
 			transform: rotate(-7deg) scale(1.1);
 }
-/* .odd {
-	-webkit-transform: rotate(-1deg);
-		-ms-transform: rotate(-1deg);
-			transform: rotate(-1deg);
-}
-.even {
-	-webkit-transform: rotate(1deg);
-		-ms-transform: rotate(1deg);
-			transform: rotate(1deg);
-} */
 .odd .activity_icon {
+	-webkit-transform: rotate(-5deg);
+		-ms-transform: rotate(-5deg);
+			transform: rotate(-5deg);
 	margin-right: 20px;
 }
 .even .activity_icon {
 	margin-left: 20px;
+	-webkit-transform: rotate(5deg);
+		-ms-transform: rotate(5deg);
+			transform: rotate(5deg);
 }
 .even .activity_text {
 	text-align: right;
