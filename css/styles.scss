@@ -198,6 +198,15 @@ a.activity {
 article {
 	font-size: 20px;
 }
+.back {
+	position: relative;
+	left: 4px;
+	margin: 0;
+	font-size: 14px;
+}
+.back svg {
+	margin: 0;
+}
 article * {
 	margin-bottom: 20px;
 }
