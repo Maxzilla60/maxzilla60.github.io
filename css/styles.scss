@@ -3,6 +3,10 @@
 
 @import "variables";
 
+html {
+	overflow-x: hidden;
+	width: 100vw;
+}
 * {
 	padding: 0;
 	margin: 0;
