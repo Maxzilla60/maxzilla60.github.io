@@ -13,9 +13,6 @@ permalink: /activiteiten/
 				<div class="activity_title">
 					{{ activity.title }}
 				</div>
-				{% if activity.selection %}
-					<a class="sprinkles" href="{{ activity.url }}">selectie</a>
-				{% endif %}
 				<div class="activity_date licorice">
 					duur : {{ activity.period }}</br>
 					{% if activity.location != "" %}
@@ -34,6 +31,9 @@ permalink: /activiteiten/
 				<div class="activity_description licorice">
 					{{ activity.short }}
 				</div>
+				{% if activity.selection %}
+					<a class="sprinkles" href="{{ activity.url }}">lees meer</a>
+				{% endif %}
 			</div>
 		</div>
 	{% endfor %}
