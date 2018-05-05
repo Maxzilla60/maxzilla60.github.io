@@ -31,6 +31,9 @@ header {
 	background-color: $chocolate;
 	text-align: center;
 }
+.inner_header {
+	width: 90%;
+}
 header h1 {
 	font-family: 'Oleo Script', cursive;
 	font-size: 80px;
@@ -42,7 +45,7 @@ header h2 {
 }
 header div {
 	background-color: $chocolate;
-	width: fit-content;
+	width: 90%;
 	margin: auto;
 }
 nav {
