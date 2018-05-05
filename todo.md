@@ -3,6 +3,7 @@ layout: main
 title: To-Do List for Portfolio
 ---
 * Intro (Photo, LinkedIn,..)
+* Header size on phones
 * Verleden tijd?
 * Chocolate Squares
 * Favicon

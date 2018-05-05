@@ -19,11 +19,13 @@ email: maxpower98@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hallo, ik ben Maxime Orione - noem me maar Max - en dit is mijn I-Talent Portfolio!
   Ik ben student Application Development op de Hogeschool PXL te Hasselt. Mijn programmeurshart ligt vooral bij webdevelopment, zowel front- als back-end, maar ik hou me ook veel bezig met tekenen.
-  Dit portfolio beschrijft de verschillende activiteiten waaraan ik heb meegedaan doorheen mijn opleiding op de hogeschool PXL.
+  Dit portfolio beschrijft en is een refliectie over de verschillende activiteiten waaraan ik heb meegedaan doorheen mijn opleiding op de hogeschool
+  PXL.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: max-orione
 github_username:  Maxzilla60
+art_tumblr: http://stormsketch.tumblr.com
 
 # Collections
 collections:
