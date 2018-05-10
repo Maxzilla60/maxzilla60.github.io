@@ -10,9 +10,6 @@ html {
 * {
 	padding: 0;
 	margin: 0;
-	-webkit-transition-duration: 0.3s;
-	-o-transition-duration: 0.3s;
-	transition-duration: 0.3s;
 }
 a {
 	color: $chocolate;
@@ -27,8 +24,8 @@ a:hover {
 .sprinkles { color: $sprinkles; }
 
 header {
-	padding-top: 40px;
 	background-color: $chocolate;
+	padding-top: 40px;
 	text-align: center;
 }
 .inner_header {
@@ -45,8 +42,8 @@ header h2 {
 }
 header div {
 	background-color: $chocolate;
-	width: 90%;
 	margin: auto;
+	width: 90%;
 }
 nav {
 	background-color: $chocolate;
@@ -68,9 +65,13 @@ nav {
 .sm_icon img:hover {
 	-webkit-transform: rotate(-9deg) scale(1.1);
 	-ms-transform: rotate(-9deg) scale(1.1);
-		transform: rotate(-9deg) scale(1.1);
+	transform: rotate(-9deg) scale(1.1);
 }
 button {
+	-o-transition: transform ease-in-out 0.3s;
+	-webkit-box-shadow: 0px 2px 0px $milk_light, 0px -5px 0px $chocolate_shadow;
+	-webkit-transition: -webkit-transform ease-in-out 0.3s;
+	-webkit-transition: transform ease-in-out 0.3s;
 	background-color: $milk;
 	border-radius: 5px;
 	border: none;
@@ -83,53 +84,59 @@ button {
 	margin-right: 7px;
 	padding: 5px;
 	text-decoration: none;
+	transition: -webkit-transform ease-in-out 0.3s;
+	transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
+	transition: transform ease-in-out 0.3s;
 }
 button:hover {
-	-webkit-transform: rotate(-7deg) scale(1.1);
 	-ms-transform: rotate(-7deg) scale(1.1);
-		transform: rotate(-7deg) scale(1.1);
+	-webkit-box-shadow: 0px 2px 0px $milk_light, 0px -2px 0px $chocolate_shadow;
+	-webkit-transform: rotate(-7deg) scale(1.1);
 	box-shadow: 0px 2px 0px $milk_light, 0px -2px 0px $chocolate_shadow;
 	color: $sprinkles;
 	cursor: pointer;
+	transform: rotate(-7deg) scale(1.1);
 }
 button:focus {
 	outline: none;
 }
 button.active {
 	background-color: $chocolate_shadow;
+	-webkit-box-shadow: 0px 2px 0px $chocolate_shadow, 0px -3px 0px $chocolate_shadow;
 	box-shadow: 0px 2px 0px $chocolate_shadow, 0px -3px 0px $chocolate_shadow;
 	color: $banana;
 }
 button.active:hover {
-	-webkit-transform: none;
 	-ms-transform: none;
-		transform: none;
+	-webkit-transform: none;
 	cursor: default;
+	transform: none;
 }
 .chocodrip {
-	height: 90px;
-	background: url("../assets/drip.svg");
-	background-repeat: repeat-x;
 	background-position: center;
+	background-repeat: repeat-x;
+	background: url("../assets/drip.svg");
 	border: 0px;
+	height: 90px;
 }
 
 body {
+	background-attachment: fixed;
+	background: -o-linear-gradient(top, #ffe135 0%, #FFE056 100%);
 	background: -webkit-gradient(linear, left top, left bottom, from(#ffe135), to(#FFE056));
 	background: -webkit-linear-gradient(top, #ffe135 0%, #FFE056 100%);
-	background: -o-linear-gradient(top, #ffe135 0%, #FFE056 100%);
 	background: linear-gradient(to bottom, #ffe135 0%, #FFE056 100%);
-	background-attachment: fixed;
 	font-family: 'Lato', sans-serif;
 }
 main {
-	width: 90%;
-	margin: auto;
-	margin-top: 40px;
 	margin-bottom: 40px;
+	margin-top: 40px;
+	margin: auto;
+	width: 90%;
 }
 
 article, .description {
+	-webkit-box-shadow: 0px 2px 0px $milk_light;
 	background-color: $milk;
 	border-radius: 10px;
 	box-shadow: 0px 2px 0px $milk_light;
@@ -137,9 +144,12 @@ article, .description {
 	padding: 30px;
 }
 .description {
+	-o-transition: width ease-in-out 0.3s;
+	-webkit-transition: width ease-in-out 0.3s;
 	font-size: 18px;
 	margin-bottom: 40px;
 	text-align: center;
+	transition: width ease-in-out 0.3s;
 }
 .activity {
 	-ms-flex-align: center;
@@ -165,32 +175,50 @@ a.activity {
 	padding-left: 20px;
 }
 .odd.activity:hover > .activity_icon {
+	-ms-transform: rotate(7deg) scale(1.1);
+	-o-transition: transform ease-in-out 0.3s;
 	-webkit-transform: rotate(7deg) scale(1.1);
-		-ms-transform: rotate(7deg) scale(1.1);
-			transform: rotate(7deg) scale(1.1);
+	-webkit-transition: -webkit-transform ease-in-out 0.3s;
+	-webkit-transition: transform ease-in-out 0.3s;
+	transform: rotate(7deg) scale(1.1);
+	transition: -webkit-transform ease-in-out 0.3s;
+	transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
+	transition: transform ease-in-out 0.3s;
 }
 .even.activity:hover > .activity_icon {
+	-ms-transform: rotate(-7deg) scale(1.1);
+	-o-transition: transform ease-in-out 0.3s;
 	-webkit-transform: rotate(-7deg) scale(1.1);
-		-ms-transform: rotate(-7deg) scale(1.1);
-			transform: rotate(-7deg) scale(1.1);
+	-webkit-transition: -webkit-transform ease-in-out 0.3s;
+	-webkit-transition: transform ease-in-out 0.3s;
+	transform: rotate(-7deg) scale(1.1);
+	transition: -webkit-transform ease-in-out 0.3s;
+	transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
+	transition: transform ease-in-out 0.3s;
 }
 .odd .activity_icon {
+	-ms-transform: rotate(-5deg);
 	-webkit-transform: rotate(-5deg);
-		-ms-transform: rotate(-5deg);
-			transform: rotate(-5deg);
 	margin-right: 20px;
+	transform: rotate(-5deg);
 }
 .even .activity_icon {
-	margin-left: 20px;
+	-ms-transform: rotate(5deg);
 	-webkit-transform: rotate(5deg);
-		-ms-transform: rotate(5deg);
-			transform: rotate(5deg);
+	margin-left: 20px;
+	transform: rotate(5deg);
 }
 .even .activity_text {
 	text-align: right;
 }
 .activity_icon {
+	-o-transition: transform ease-in-out 0.3s;
+	-webkit-transition: -webkit-transform ease-in-out 0.3s;
+	-webkit-transition: transform ease-in-out 0.3s;
 	height: inherit;
+	transition: -webkit-transform ease-in-out 0.3s;
+	transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
+	transition: transform ease-in-out 0.3s;
 	width: 200px;
 }
 .activity_icon img {
@@ -208,8 +236,8 @@ a.activity {
 	text-decoration: none;
 }
 .activity_date {
-	margin-top: 5px;
 	margin-bottom: 10px;
+	margin-top: 5px;
 }
 .activity_description {
 	font-size: 20px;
@@ -235,9 +263,9 @@ article h1 {
 	color: $chocolate;
 	font-family: 'Oleo Script', cursive;
 	font-size: 40px;
+	margin-bottom: 0;
 	text-align: center;
 	text-shadow: 0px 3px 0px $banana_shadow;
-	margin-bottom: 0;
 }
 article h2 {
 	font-size: 30px;
@@ -261,10 +289,13 @@ article blockquote {
 	text-align: center;
 }
 article button {
+	-webkit-box-shadow: 0px 2px 0px $milk_light;
 	background-color: $chocolate;
 	border-radius: 10px;
 	box-shadow: 0px 2px 0px $milk_light;
 	color: $milk;
+	display: -ms-flexbox;
+	display: -webkit-box;
 	display: flex;
 	font-size: 30px;
 	margin: auto;
@@ -275,6 +306,7 @@ article button.small_button {
 	font-size: 23px;
 }
 article a button {
+	-webkit-text-decoration-line: none;
 	text-decoration-line: none;
 }
 article button .fa-file-alt {
@@ -318,9 +350,9 @@ article button.small_button .fa-file-alt {
 		width: 80%;
 	}
 	nav button {
+		font-size: 4vw;
 		margin-left: 1vw;
 		margin-right: 1vw;
-		font-size: 4vw;
 	}
 	.description, .description * {
 		font-size: 3.2vw;
