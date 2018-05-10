@@ -313,4 +313,16 @@ article button.small_button .fa-file-alt {
 	article p {
 		font-size: 3.2vw;
 	}
+	.my_picture img {
+		height: inherit;
+		width: 80%;
+	}
+	nav button {
+		margin-left: 1vw;
+		margin-right: 1vw;
+		font-size: 4vw;
+	}
+	.description, .description * {
+		font-size: 3.2vw;
+	}
 }
